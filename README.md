@@ -1,4 +1,4 @@
-# Sweetest Tee T-Shirt Designer
+# Sweetest Tees T-Shirt Designer
 
 <br>
 Initial proposal:<br>
