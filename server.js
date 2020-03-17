@@ -1,45 +1,36 @@
-// Dependencies
+// Requiring necessary npm packages
 var express = require("express");
-var exphbs = require("express-handlebars");
+var session = require("express-session");
+// Requiring passport as we've configured it
+var passport = require("./config/passport");
 
-// Create an instance of the express app.
-var app = express();
-
-// Set the port of our application
-// process.env.PORT lets the port be set by Heroku
+// Setting up port and requiring models for syncing
 var PORT = process.env.PORT || 8080;
+var db = require("./models");
 
-// Set Handlebars as the default templating engine.
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+// Creating express app and configuring middleware needed for authentication
+var app = express();
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static("public"));
+// We need to use sessions to keep track of our user's login status
+app.use(
+  session({ secret: "keyboard cat", resave: true, saveUninitialized: true })
+);
+app.use(passport.initialize());
+app.use(passport.session());
 
-// Data
-var lunches = [
-  {
-    lunch: "Beet & Goat Cheese Salad with minestrone soup."
-  }, {
-    lunch: "Pizza, two double veggie burgers, fries with a Big Gulp"
-  }
-];
+// Requiring our routes
+require("./controllers/html-routes.js")(app);
+require("./controllers/api-routes.js")(app);
 
-// Routes
-app.get("/weekday", function(req, res) {
-  res.render("index", lunches[0]);
-});
-
-app.get("/weekend", function(req, res) {
-  res.render("index", lunches[1]);
-});
-
-app.get("/lunches", function(req, res) {
-  res.render("all-lunches", {
-    foods: lunches,
-    eater: "david"
+// Syncing our database and logging a message to the user upon success
+db.sequelize.sync().then(function() {
+  app.listen(PORT, function() {
+    console.log(
+      "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
+      PORT,
+      PORT
+    );
   });
-});
-
-// Start our server so that it can begin listening to client requests.
-app.listen(PORT, function() {
-  // Log (server-side) when our server has started
-  console.log("Server listening on: http://localhost:" + PORT);
 });
