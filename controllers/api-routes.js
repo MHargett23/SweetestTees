@@ -56,5 +56,7 @@ module.exports = function(app) {
       color: req.body.color,
       icon: req.body.icon
     })
+    .then(dbTee => res.status(200).json(dbTee))
+    .catch(err => res.status(500).json(err));
   });
 };
