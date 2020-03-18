@@ -51,7 +51,7 @@ module.exports = function(app) {
     }
   });
 
-  app.post("/api/tee", function(req, res){
+  app.post("/api/tee", function(req, res) {
     db.Tee.create({
       color: req.body.color,
       icon: req.body.icon
