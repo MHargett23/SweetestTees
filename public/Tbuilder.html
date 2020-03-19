@@ -74,10 +74,13 @@
     <div class="columns column-gap">
         <div class="column is-half"  style="margin-left:2rem">
             <img id="imageToSwap" class="profile" src="assets/img/men-s-t-shirt-blue.png">
+            <img id="gameImageSwap" src="assets/img/sheep.png">
         </div>
+<!-- start test -->
 
+<!-- end test -->
+        
         <div class="column">
-            
              <div class="select is-primary is-rounded">                    
                 <select onchange="$('#imageToSwap').attr('src', this.options[this.selectedIndex].value);">
                     <option value="assets/img/men-s-t-shirt-red.png" selected>red</option>
@@ -89,6 +92,23 @@
                 </select>
             </div>
         </div>
+        <div class="column">
+            <div class="select is-primary is-rounded">                    
+               <select onchange="$('#gameImageSwap').attr('src', this.options[this.selectedIndex].value);">
+                   <option value="assets/img/sheep.png" selected>sheep</option>
+                   <option value="assets/img/stoned-skull.png">stoned skull</option>
+                   <option value="assets/img/winged-leg.png">Winged Leg</option>
+                   <option value="assets/img/bee.png">Bee</option>
+                   <option value="assets/img/techno-heart.png">Techno Heart</option>
+                   <option value="assets/img/stack.png">Stacked</option>
+                   <option value="assets/img/rolling-dices.png">Rolling Dice</option>
+                   <option value="assets/img/eight-ball.png">8 Ball</option>
+                   <option value="assets/img/dinosaur-bones.png">dinosaur bones</option>
+                   <option value="assets/img/cursed-star (1).png">Cussed Star</option>
+                   <option value="assets/img/compact-disc.png">TM-87</option>
+               </select>
+           </div>
+       </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
