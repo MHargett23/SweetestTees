@@ -44,10 +44,11 @@ module.exports = function(app) {
     } else {
       // Otherwise send back the user's email and id
       // Sending back a password, even a hashed password, isn't a good idea
-      res.json({
-        email: req.user.email,
-        id: req.user.id
-      });
+      db.Tee.findAll({
+        where: {userId: req.user.id}
+      })
+      .then(tees => res.status(200).json(tees))
+      .catch(err => res.status(500).json(err));
     }
   });
 
