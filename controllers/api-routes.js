@@ -45,7 +45,7 @@ module.exports = function(app) {
       // Otherwise send back the user's email and id
       // Sending back a password, even a hashed password, isn't a good idea
       db.Tee.findAll({
-        where: {userId: req.user.id}
+        where: {UserId: req.user.id}
       })
       .then(tees => res.status(200).json(tees))
       .catch(err => res.status(500).json(err));
@@ -53,9 +53,14 @@ module.exports = function(app) {
   });
 
   app.post("/api/tee", function(req, res) {
+    if (!req.user) {
+      // The user is not logged in
+      res.redirect("/login");
+    } else 
     db.Tee.create({
       color: req.body.color,
-      icon: req.body.icon
+      icon: req.body.icon,
+      UserId: req.user.id
     })
     .then(dbTee => res.status(200).json(dbTee))
     .catch(err => res.status(500).json(err));
