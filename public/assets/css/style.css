@@ -8,9 +8,10 @@ form.login {
 }
 #gameImageSwap{
   position: absolute;
-  height: 10%;
-  width: 10%;
-  left: 0;
+  height: 13%;
+  width: 13%;
+  left: 8.5%;
+  top: 30%;
   z-index: 10;
 }
 .drawing-area{
