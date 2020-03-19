@@ -65,7 +65,7 @@
 <!-- end test -->
         
         <div class="column">
-             <div class="select is-primary is-rounded">                    
+             <div id="colorSelect" class="select is-primary is-rounded">                    
                 <select onchange="$('#imageToSwap').attr('src', this.options[this.selectedIndex].value);">
                     <option value="assets/img/men-s-t-shirt-red.png" selected>red</option>
                     <option value="assets/img/men-s-t-shirt-purple.png">purple</option>
@@ -77,7 +77,7 @@
             </div>
         </div>
         <div class="column">
-            <div class="select is-primary is-rounded">                    
+            <div id="iconSelect" class="select is-primary is-rounded">                    
                <select onchange="$('#gameImageSwap').attr('src', this.options[this.selectedIndex].value);">
                    <option value="assets/img/sheep.png" selected>sheep</option>
                    <option value="assets/img/stoned-skull.png">stoned skull</option>
@@ -100,7 +100,7 @@
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/signup.js"></script>
+    <script type="text/javascript" src="./assets/js/tbuilder.js"></script>
 </body>
 
 </html>
