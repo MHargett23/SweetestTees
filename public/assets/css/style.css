@@ -2,6 +2,9 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
+img {
+  height: 30%;
+}
 .drawing-area{
   position: absolute;
   top: 60px;
