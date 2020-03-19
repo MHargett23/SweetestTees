@@ -1,7 +1,11 @@
 {
     "development": {
       "username": "root",
+<<<<<<< HEAD
       "password": "root",
+=======
+      "password": "347*98Ng",
+>>>>>>> c999621b6dc0ebe0cea1bb4b0f5d088d1067a0e7
       "database": "sweet_tee_DB",
       "host": "127.0.0.1",
       "dialect": "mysql"
