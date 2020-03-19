@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css" />
     <link href="stylesheets/style.css" rel="stylesheet"/>
     <title>Sweetest Tees T-Shirts</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
@@ -19,8 +20,7 @@
                 <div class="container">
                     <div class="navbar-brand">
                         <a class="navbar-item">
-                            <img src="https://www.creativefabrica.com/wp-content/uploads/2019/01/Tshirt-icon-by-rudezstudio-2-580x386.jpg"
-                                alt="Logo" />
+                            <img src="https://www.creativefabrica.com/wp-content/uploads/2019/01/Tshirt-icon-by-rudezstudio-2-580x386.jpg" alt="Logo" />
                         </a>
                         <span class="navbar-burger burger" data-target="navbarMenuHeroA">
                             <span></span>
@@ -73,19 +73,19 @@
     </div>
     <div class="columns column-gap">
         <div class="column is-half"  style="margin-left:2rem">
-            <img src= "assets/img/men-s-t-shirt-blue.png">
+            <img id="imageToSwap" class="profile" src="assets/img/men-s-t-shirt-red.png">
         </div>
 
         <div class="column">
             
-            <div class="select is-primary is-rounded">
-                <select>
-                    <option>Color Choices</option>
-                    <option>red</option>
-                    <option>yellow</option>
-                    <option>green</option>
-                    <option>blue</option>
-                    <option>purple</option>
+             <div class="select is-primary is-rounded">                    
+                <select onchange="$('#imageToSwap').attr('src', this.options[this.selectedIndex].value);">
+                    <option value="assets/img/men-s-t-shirt-red.png" selected>red</option>
+                    <option value="assets/img/men-s-t-shirt-purple.png">purple</option>
+                    <option value="assets/img/men-s-t-shirt-blue.png">blue</option>
+                    <option value="assets/img/men-s-t-shirt-green (1).png">green</option>
+                    <option value="assets/img/men-s-t-shirt-yellow.png">yellow</option>
+                    <option value="assets/img/men-s-t-shirt-orange.png">orange</option>
                 </select>
             </div>
         </div>
