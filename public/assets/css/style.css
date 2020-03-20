@@ -2,11 +2,11 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
- #imageToSwap {
+ .timage {
   height: 30%;
   position: relative;
 }
-#gameImageSwap{
+.gimage{
   position: absolute;
   height: 13%;
   width: 13%;
@@ -42,5 +42,22 @@ form.login {
   top: 0px; 
   user-select: none; 
   cursor: default;}
-
+.theCol{
+  width: 50%;
+}
+.CSSTableGenerator{
+  width: 100%;
+}
+.theRow{
+  width: 100%;
+}
+table, th, td {
+  border: 1px solid white;
+}
+.thead{
+  text-align: center;
+  color: #fff;
+  padding-left: 20%;
+  padding-right: 20%;
+}
   /* test */
