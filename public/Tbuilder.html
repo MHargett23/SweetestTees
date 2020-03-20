@@ -1,81 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css"
+    />
     <title>Sweetest Tees T-Shirts</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
-    <link href="assets/css/style.css" rel="stylesheet"/>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <section class="hero is-primary is-medium">
-        <!-- Hero head: will stick at the top -->
-        <div class="hero-head">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item">
-                            <img src="assets/img/chain-mail.png" alt="Logo"/>
-                        </a>
-                        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
-                    </div>
-                    <div id="navbarMenuHeroA" class="navbar-menu">
-                        <div class="navbar-end">
-                            <a class="navbar-item is-active m-3 ml-auto text-muted" href="login.html">
-                                Home
-                            </a>
-                            <a class="navbar-item is-active m-3 ml-auto text-muted" href="signup.html">
-                                Sign Up
-                            </a>
-                            <a class="navbar-item is-active m-3 ml-auto text-muted" href="members.html">
-                                Members
-                            </a>
-                            <a class="navbar-item is-active m-3 ml-auto text-muted" href="Tbuilder.html">
-                                T-Shirt Builder
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+              <a class="navbar-item">
+                <img src="assets/img/chain-mail.png" 
+                alt="Logo" 
+                height="50" 
+                width="50" />
+              <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroA" class="navbar-menu">
+              <div class="navbar-end">
+                <a
+                  class="navbar-item is-active m-3 ml-auto text-muted"
+                  href="login.html"
+                >
+                  Home
+                </a>
+                <a
+                  class="navbar-item is-active m-3 ml-auto text-muted"
+                  href="signup.html"
+                >
+                  Sign Up
+                </a>
+                <a
+                  class="navbar-item is-active m-3 ml-auto text-muted"
+                  href="members.html"
+                >
+                  Members
+                </a>
+                <a
+                  class="navbar-item is-active m-3 ml-auto text-muted"
+                  href="Tbuilder.html"
+                >
+                  T-Shirt Builder
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </section>
     <div class="columns is-mobile is-centered">
-        <div class="column is-half">
-            <p class="bd-notification is-primary" style= "margin-left: auto; padding:1.25rem" >
-                
-            </p>
-        </div>
+      <div class="column is-half">
+        <p
+          class="bd-notification is-primary"
+          style="margin-left: auto; padding:1.25rem"
+        ></p>
+      </div>
     </div>
     <div class="columns column-gap">
-        <div class="column is-half"  style="margin-left:2rem">
-            <img id="imageToSwap" class="profile" src="assets/img/men-s-t-shirt-blue.png">
-            <img id="gameImageSwap" src="assets/img/sheep.png">
-        </div>
-<!-- start test -->
+      <div class="column is-half" style="margin-left:2rem">
+        <img
+          id="imageToSwap"
+          class="profile"
+          src="assets/img/men-s-t-shirt-blue.png"
+        />
+      </div>
 
-<!-- end test -->
-        
-        <div class="column">
-             <div id="colorSelect" class="select is-primary is-rounded">                    
-                <select onchange="$('#imageToSwap').attr('src', this.options[this.selectedIndex].value);">
-                    <option value="assets/img/men-s-t-shirt-red.png" selected>red</option>
-                    <option value="assets/img/men-s-t-shirt-purple.png">purple</option>
-                    <option value="assets/img/men-s-t-shirt-blue.png">blue</option>
-                    <option value="assets/img/men-s-t-shirt-green (1).png">green</option>
-                    <option value="assets/img/men-s-t-shirt-yellow.png">yellow</option>
-                    <option value="assets/img/men-s-t-shirt-orange.png">orange</option>
-                </select>
-            </div>
+      <div class="column">
+        <div class="select is-primary is-rounded">
+          <select
+            onchange="$('#imageToSwap').attr('src', this.options[this.selectedIndex].value);"
+          >
+            <option value="assets/img/men-s-t-shirt-red.png" selected
+              >red</option
+            >
+            <option value="assets/img/men-s-t-shirt-purple.png">purple</option>
+            <option value="assets/img/men-s-t-shirt-blue.png">blue</option>
+            <option value="assets/img/men-s-t-shirt-green (1).png"
+              >green</option
+            >
+            <option value="assets/img/men-s-t-shirt-yellow.png">yellow</option>
+            <option value="assets/img/men-s-t-shirt-orange.png">orange</option>
+          </select>
         </div>
+
         <div class="column">
             <div id="iconSelect" class="select is-primary is-rounded">                    
                <select onchange="$('#gameImageSwap').attr('src', this.options[this.selectedIndex].value);">
@@ -97,10 +124,8 @@
                     <button id="shirtSave"class="button is-primary">Submit</button>
                 </div>
             </div>
-    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./assets/js/tbuilder.js"></script>
-</body>
-
+    <script type="text/javascript" src="js/signup.js"></script>
+  </body>
 </html>
