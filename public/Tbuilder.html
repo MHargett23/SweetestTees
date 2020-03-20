@@ -8,7 +8,7 @@
     <title>Sweetest Tees T-Shirts</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
-    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet" />
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
@@ -20,7 +20,7 @@
                 <div class="container">
                     <div class="navbar-brand">
                         <a class="navbar-item">
-                            <img src="assets/img/chain-mail.png" alt="Logo"/>
+                            <img src="assets/img/chain-mail.png" alt="Logo" height="50" width="50" />
                         </a>
                         <span class="navbar-burger burger" data-target="navbarMenuHeroA"></span>
                     </div>
@@ -46,22 +46,17 @@
     </section>
     <div class="columns is-mobile is-centered">
         <div class="column is-half">
-            <p class="bd-notification is-primary" style= "margin-left: auto; padding:1.25rem" >
-                
-            </p>
+            <p class="bd-notification is-primary" style="margin-left: auto; padding:1.25rem"></p>
         </div>
     </div>
     <div class="columns column-gap">
-        <div class="column is-half"  style="margin-left:2rem">
-            <img id="imageToSwap" class="profile" src="assets/img/men-s-t-shirt-blue.png">
+        <div class="column is-half" style="margin-left:2rem">
+            <img id="imageToSwap" class="profile" src="assets/img/men-s-t-shirt-blue.png" />
             <img id="gameImageSwap" src="assets/img/sheep.png">
         </div>
-<!-- start test -->
 
-<!-- end test -->
-        
         <div class="column">
-             <div id="colorSelect" class="select is-primary is-rounded">                    
+            <div class="select is-primary is-rounded">
                 <select onchange="$('#imageToSwap').attr('src', this.options[this.selectedIndex].value);">
                     <option value="assets/img/men-s-t-shirt-red.png" selected>red</option>
                     <option value="assets/img/men-s-t-shirt-purple.png">purple</option>
@@ -71,32 +66,31 @@
                     <option value="assets/img/men-s-t-shirt-orange.png">orange</option>
                 </select>
             </div>
-        </div>
-        <div class="column">
-            <div id="iconSelect" class="select is-primary is-rounded">                    
-               <select onchange="$('#gameImageSwap').attr('src', this.options[this.selectedIndex].value);">
-                   <option value="assets/img/sheep.png" selected>sheep</option>
-                   <option value="assets/img/stoned-skull.png">stoned skull</option>
-                   <option value="assets/img/winged-leg.png">Winged Leg</option>
-                   <option value="assets/img/bee.png">Bee</option>
-                   <option value="assets/img/techno-heart.png">Techno Heart</option>
-                   <option value="assets/img/rolling-dices.png">Rolling Dice</option>
-                   <option value="assets/img/eight-ball.png">8 Ball</option>
-                   <option value="assets/img/dinosaur-bones.png">dinosaur bones</option>
-                   <option value="assets/img/cursed-star (1).png">Cussed Star</option>
-                   <option value="assets/img/compact-disc.png">TM-87</option>
-               </select>
-           </div>
-       </div>
-            <div class="field is-grouped column ">
-                <div class="control">
-                    <button id="shirtSave"class="button is-primary">Submit</button>
+
+            <div class="column">
+                <div id="iconSelect" class="select is-primary is-rounded">
+                    <select onchange="$('#gameImageSwap').attr('src', this.options[this.selectedIndex].value);">
+                        <option value="assets/img/sheep.png" selected>sheep</option>
+                        <option value="assets/img/stoned-skull.png">stoned skull</option>
+                        <option value="assets/img/winged-leg.png">Winged Leg</option>
+                        <option value="assets/img/bee.png">Bee</option>
+                        <option value="assets/img/techno-heart.png">Techno Heart</option>
+                        <option value="assets/img/rolling-dices.png">Rolling Dice</option>
+                        <option value="assets/img/eight-ball.png">8 Ball</option>
+                        <option value="assets/img/dinosaur-bones.png">dinosaur bones</option>
+                        <option value="assets/img/cursed-star (1).png">Cussed Star</option>
+                        <option value="assets/img/compact-disc.png">TM-87</option>
+                    </select>
                 </div>
             </div>
-    
+            <div class="field is-grouped column ">
+                <div class="control">
+                    <button id="shirtSave" class="button is-primary">Submit</button>
+                </div>
+            </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./assets/js/tbuilder.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script type="text/javascript" src="js/signup.js"></script>
 </body>
 
 </html>
