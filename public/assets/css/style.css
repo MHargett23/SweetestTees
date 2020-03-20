@@ -2,8 +2,17 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
-img {
+ #imageToSwap {
   height: 30%;
+  position: relative;
+}
+#gameImageSwap{
+  position: absolute;
+  height: 13%;
+  width: 13%;
+  left: 8.5%;
+  top: 30%;
+  z-index: 10;
 }
 .drawing-area{
   position: absolute;
@@ -32,4 +41,6 @@ img {
   left: 0px; 
   top: 0px; 
   user-select: none; 
-  cursor: default;
+  cursor: default;}
+
+  /* test */
