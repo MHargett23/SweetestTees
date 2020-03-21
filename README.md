@@ -8,3 +8,6 @@ Login/ User - Passport<br>
 Tshirt Editor - tshirt colors - logos<br>
 Save tshirts made to user account<br>
 Deploy to Heroku
+
+## Deployed link 
+https://sweetesttees.herokuapp.com/
