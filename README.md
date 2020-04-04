@@ -15,4 +15,4 @@ A T-shirt Designing Application that allows the user to create a username and pa
 [Visit this website](https://sweetesttees.herokuapp.com/)
 
 ### Screenshot
-![Screenshot of Portfolio](./public/assets/images/tsbss.png)
+![Screenshot of Portfolio](./public/assets/img/tsbss.png)
