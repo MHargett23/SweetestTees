@@ -1,6 +1,6 @@
 # Sweetest Tees T-Shirt Designer
 
-## User Story  
+### User Story  
 ◦AS young developers who love designing websites and T Shirts,  
 ◦WE want to make an app to create customizable T Shirts that include some of our favorite internet logos and icons.  
 ◦SO that we can address and enhance our style as web desginers.  
@@ -14,5 +14,5 @@ A T-shirt Designing Application that allows the user to create a username and pa
 ### Link
 [Visit this website](https://sweetesttees.herokuapp.com/)
 
-### Screenshot
-![Screenshot of Portfolio](./public/assets/img/tsbss.png)
+### Visuals
+![Screenshot of Sweetest Tees T-Shirt Designer App](./public/assets/img/tsbss.png)
