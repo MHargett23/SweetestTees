@@ -12,8 +12,13 @@ This is accomplished in the T-Shirt Builder part of the app, where users are all
 ### Description
 A T-shirt Designing Application that allows the user to create a username and password. Once logged in the user will be able to see all previous tee shirts that they have created and update them if needed. We collect information on the user such as color of the shirt, and any additional logos or images they want to add to their design.
 
-### Link
-[Visit this website](https://sweetesttees.herokuapp.com/)
+### Authors
+Martin Hargett | [GitHub](https://github.com/MHargett23)  
+Owen Edwards | [GitHub](https://github.com/Ivyparade)  
+Nathan Gianelli | [GitHub](https://github.com/nathan-gianelli)  
 
 ### Visuals
 ![Screenshot of Sweetest Tees T-Shirt Designer App](./public/assets/img/tsbss.png)
+
+### Link
+[Visit this website](https://sweetesttees.herokuapp.com/)
